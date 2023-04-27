@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-color-item-highlight: #6200ee;
+  --color-color-item-on-hover: #ece0fd;
+  --color-color-card-primary: #ffffff;
+  --color-color-background: #f5f5f5;
+  --color-font-colors-color-font-heading: #333333;
+  --color-font-colors-color-font-text: #666666;
+  --color-font-colors-color-font-on-highlight: #ffffff;
+}
+
+body,
+html {
+  background-color: var(--color-color-background);
+
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+.calendar,
+.months {
+  border-radius: 1.6rem;
+  background-color: var(--color-color-card-primary);
+
+  box-shadow: 1rem 1rem 2rem #bbb;
+
+  max-width: 34.4rem;
+  width: 100%;
+
+  padding: 3.2rem;
+}
+
+.calendar nav,
+.months nav {
+  color: var(--color-font-colors-color-font-heading);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.6rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.calendar nav i,
+.months nav i {
+  color: var(--color-font-colors-color-font-text);
+
+}
+
+.calendar .actually,
+.months .actually {
+  color: var(--color-font-colors-color-font-heading);
+
+  border-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+
+  font-weight: 700;
+}
+
+.calendar div i {
+  font-weight: 700;
+
+  align-self: flex-end;
+
+  cursor: pointer;
+}
+
+.calendar i,
+.months i {
+  padding: .6rem;
+
+  cursor: pointer;
+}
+
+.calendar i:hover,
+.months i:hover {
+  background-color: var(--color-color-item-on-hover);
+  border-radius: 50%;
+}
+
+.days ul {
+  display: flex;
+  text-align: center;
+
+  margin-bottom: .4rem;
+}
+
+.days ul li {
+  color: var(--color-font-colors-color-font-text);
+
+  font-size: 1.2rem;
+
+  flex: 1;
+}
+
+.dates ul,
+.months ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.dates ul li,
+.month ul li {
+  display: flex;
+  align-items: center;
+}
+
+.dates li span,
+.month li span {
+  border-radius: .8rem;
+  color: var(--color-font-colors-color-font-text);
+
+  display: flex;
+  justify-content: center;
+  flex: 1;
+
+  font-size: 1.6rem;
+
+  padding: 1.2rem 1.05rem;
+
+  cursor: pointer;
+
+  transition: all .3s;
+}
+
+.dates li span:hover,
+.month li span:hover {
+  background-color: var(--color-color-item-on-hover);
+}
+
+.dates li span:active,
+.dates li span.ativa,
+.month li span.ativa {
+  border-radius: .8rem;
+  background-color: var(--color-color-item-highlight);
+  color: var(--color-font-colors-color-font-on-highlight);
+
+  font-weight: 700;
+}
+
+.dates li .disabled {
+  color: #bbb;
+}
+
+.month ul {
+  gap: 1.6rem;
+}
+
+.month li {
+  gap: 1rem;
+}
+
+.month li span {
+  padding: 1.2rem 2.9rem;
+}
+
+.x i {
+  color: red;
+
+  font-size: 3.2rem;
+
+  position: absolute;
+  top: 25rem;
+  left: 65rem;
+
+  cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}

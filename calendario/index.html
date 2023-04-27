@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <section class="calendar">
+    <header>
+      <nav>
+        <i class="ph-light ph-caret-left"></i>
+
+        <div class="actually">
+          <span>Abril 2023</span>
+          <i class="ph-light ph-caret-down"></i>
+        </div>
+
+        <i class="ph-light ph-caret-right"></i>
+      </nav>
+    </header>
+
+    <div class="days">
+      <ul>
+        <li>Dom</li>
+        <li>Seg</li>
+        <li>Ter</li>
+        <li>Qua</li>
+        <li>Qui</li>
+        <li>Sex</li>
+        <li>Sáb</li>
+      </ul>
+    </div>
+    
+    <div class="dates">
+      <ul>
+        <li>
+          <span class="disabled">26</span>
+          <span class="disabled">27</span>
+          <span class="disabled">28</span>
+          <span class="disabled">29</span>
+          <span class="disabled">30</span>
+          <span class="disabled">31</span>
+          <span>1</span>
+        </li>
+
+        <li>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+        </li>
+
+        <li>
+          <span>9</span>
+          <span>10</span>
+          <span>11</span>
+          <span>12</span>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+        </li>
+
+        <li>
+          <span>16</span>
+          <span>17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          <span>22</span>
+        </li>
+
+        <li>
+          <span>23</span>
+          <span>24</span>
+          <span>25</span>
+          <span>26</span>
+          <span>27</span>
+          <span>28</span>
+          <span>29</span>
+        </li>
+
+        <li>
+          <span>30</span>
+          <span class="disabled">1</span>
+          <span class="disabled">2</span>
+          <span class="disabled">3</span>
+          <span class="disabled">4</span>
+          <span class="disabled">5</span>
+          <span class="disabled">6</span>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section class="months invisible">
+    <header>
+      <nav>
+        <i class="ph-light ph-caret-left"></i>
+        
+        <div class="actually">
+          <span>2023</span>
+        </div>
+
+        <i class="ph-light ph-caret-right"></i>
+      </nav>
+    </header>
+
+    <div class="month">
+      <ul>
+        <li>
+          <span>Jan</span>
+          <span>Fev</span>
+          <span>Mar</span>
+        </li>
+        <li> 
+          <span>Abr</span>
+          <span>Mai</span>
+          <span>Jun</span>
+        </li>
+        <li>
+          <span>Jul</span>
+          <span>Ago</span>
+          <span>Set</span>
+        </li>
+        <li>
+          <span>Out</span>
+          <span>Nov</span>
+          <span>Dez</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="x invisible">
+      <i class="ph-light ph-x"></i>
+    </div>
+  </section>
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
